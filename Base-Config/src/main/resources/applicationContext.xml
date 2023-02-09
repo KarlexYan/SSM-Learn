@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--1.导入spring的坐标spring-context，对应版本是5.2.10.RELEASE-->
+
+    <bean id="bookDao" class="com.KarlexYan.dao.impl.BookDaoImpl" />
+
+    <!--
+        bean标签
+            * name属性可以给bean起别名，用逗号 或 分号 或 空格分隔
+            * scope属性定义bean的作用范围
+                * singleton 单例 (default)
+                * prototype 非单例
+        property标签的ref属性引用也可以使用别名，但是建议使用id
+    -->
+    <bean id="bookService" name="bookServiceEbi" class="com.KarlexYan.service.impl.BookServiceImpl" scope="prototype">
+        <property name="bookDao" ref="bookDao" />
+    </bean>
+
+</beans>
