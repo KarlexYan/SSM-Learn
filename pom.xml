@@ -11,11 +11,20 @@
     <modules>
         <module>Spring-QuickStart</module>
         <module>Base-Config</module>
+        <module>Bean_instance</module>
     </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.2.10.RELEASE</version>
+        </dependency>
+    </dependencies>
 
 </project>
