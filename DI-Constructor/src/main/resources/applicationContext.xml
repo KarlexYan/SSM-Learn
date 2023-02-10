@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--构造器注入标准书写 根据构造方法参数名称注入-->
+<!--    <bean id="bookDao" class="com.KarlexYan.dao.impl.BookDaoImpl" >-->
+<!--        <constructor-arg name="connectionNumber" value="10"/>-->
+<!--        <constructor-arg name="databaseName" value="mysql" />-->
+<!--    </bean>-->
+
+<!--    <bean id="userDao" class="com.KarlexYan.dao.impl.UserDaoImpl" />-->
+
+<!--    <bean id="bookService" class="com.KarlexYan.service.impl.BookServiceImpl" >-->
+<!--        <constructor-arg name="bookDao" ref="bookDao" />-->
+<!--        <constructor-arg name="userDao" ref="userDao" />-->
+<!--    </bean>-->
+
+    <!--解决形参名称的问题，与形参名不耦合 根据构造方法参数类型注入-->
+<!--    <bean id="bookDao" class="com.KarlexYan.dao.impl.BookDaoImpl">-->
+<!--        <constructor-arg type="int" value="10" />-->
+<!--        <constructor-arg type="java.lang.String" value="mysql" />-->
+<!--    </bean>-->
+
+<!--    <bean id="userDao" class="com.KarlexYan.dao.impl.UserDaoImpl" />-->
+
+<!--    <bean id="bookService" class="com.KarlexYan.service.impl.BookServiceImpl" >-->
+<!--        <constructor-arg name="bookDao" ref="bookDao" />-->
+<!--        <constructor-arg name="userDao" ref="userDao" />-->
+<!--    </bean>-->
+
+    <!--解决参数类型重复问题，使用位置解决参数匹配 根据构造方法参数位置注入-->
+    <bean id="bookDao" class="com.KarlexYan.dao.impl.BookDaoImpl">
+        <constructor-arg index="0" value="10" />
+        <constructor-arg index="1" value="mysql" />
+    </bean>
+
+    <bean id="userDao" class="com.KarlexYan.dao.impl.UserDaoImpl" />
+
+    <bean id="bookService" class="com.KarlexYan.service.impl.BookServiceImpl" >
+        <constructor-arg name="bookDao" ref="bookDao" />
+        <constructor-arg name="userDao" ref="userDao" />
+    </bean>
+</beans>

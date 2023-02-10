@@ -2,20 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>SSM-Learn</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>SSM-Learn</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>Spring-QuickStart</module>
-        <module>Base-Config</module>
-        <module>Bean_instance</module>
-        <module>Bean-Lifecycle</module>
-        <module>DI-Set</module>
-        <module>DI-Constructor</module>
-    </modules>
+    <artifactId>DI-Constructor</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -29,5 +23,4 @@
             <version>5.2.10.RELEASE</version>
         </dependency>
     </dependencies>
-
 </project>
