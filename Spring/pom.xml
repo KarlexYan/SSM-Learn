@@ -11,6 +11,20 @@
 
     <artifactId>Spring</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>Annotation-Bean-Manage</module>
+        <module>Annotation-Bean</module>
+        <module>Base-Config</module>
+        <module>Bean-Lifecycle</module>
+        <module>Bean_instance</module>
+        <module>Container</module>
+        <module>DataSource</module>
+        <module>DI-AutoWare</module>
+        <module>DI-Collection</module>
+        <module>DI-Constructor</module>
+        <module>DI-Set</module>
+        <module>Spring-QuickStart</module>
+    </modules>
 
 
     <properties>
