@@ -24,6 +24,7 @@
         <module>DI-Constructor</module>
         <module>DI-Set</module>
         <module>Spring-QuickStart</module>
+        <module>Annotation-DI</module>
     </modules>
 
 
