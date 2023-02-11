@@ -25,6 +25,7 @@
         <module>DI-Set</module>
         <module>Spring-QuickStart</module>
         <module>Annotation-DI</module>
+        <module>Annotation-Third-Bean-Manage</module>
     </modules>
 
 
