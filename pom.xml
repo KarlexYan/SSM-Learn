@@ -9,18 +9,6 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>Spring-QuickStart</module>
-        <module>Base-Config</module>
-        <module>Bean_instance</module>
-        <module>Bean-Lifecycle</module>
-        <module>DI-Set</module>
-        <module>DI-Constructor</module>
-        <module>DI-AutoWare</module>
-        <module>DI-Collection</module>
-        <module>DataSource</module>
-        <module>Container</module>
-        <module>Annotation-Bean</module>
-        <module>Spring</module>
         <module>Spring</module>
     </modules>
 
