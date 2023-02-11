@@ -17,6 +17,7 @@
         <module>DI-Constructor</module>
         <module>DI-AutoWare</module>
         <module>DI-Collection</module>
+        <module>DataSource</module>
     </modules>
 
     <properties>
