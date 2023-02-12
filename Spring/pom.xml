@@ -28,6 +28,7 @@
         <module>Annotation-Third-Bean-Manage</module>
         <module>Spring-MyBatis</module>
         <module>Spring-JUnit</module>
+        <module>AOP-QuickStart</module>
     </modules>
 
 
