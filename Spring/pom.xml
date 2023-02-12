@@ -26,6 +26,7 @@
         <module>Spring-QuickStart</module>
         <module>Annotation-DI</module>
         <module>Annotation-Third-Bean-Manage</module>
+        <module>Spring-MyBatis</module>
     </modules>
 
 
