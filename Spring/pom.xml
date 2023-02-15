@@ -29,6 +29,7 @@
         <module>Spring-MyBatis</module>
         <module>Spring-JUnit</module>
         <module>AOP-QuickStart</module>
+        <module>AOP-PointCut</module>
     </modules>
 
 
