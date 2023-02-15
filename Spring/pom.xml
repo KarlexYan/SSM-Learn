@@ -30,6 +30,7 @@
         <module>Spring-JUnit</module>
         <module>AOP-QuickStart</module>
         <module>AOP-PointCut</module>
+        <module>AOP-Advice-Type</module>
     </modules>
 
 
