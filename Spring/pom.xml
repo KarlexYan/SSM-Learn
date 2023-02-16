@@ -34,6 +34,7 @@
         <module>Case-Interface-Run-Speed</module>
         <module>AOP-Advice-Data</module>
         <module>Case-Handle-Password</module>
+        <module>Case-Transfer</module>
     </modules>
 
 
