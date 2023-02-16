@@ -35,6 +35,7 @@
         <module>AOP-Advice-Data</module>
         <module>Case-Handle-Password</module>
         <module>Case-Transfer</module>
+        <module>Case-Transfer-Log</module>
     </modules>
 
 
