@@ -33,6 +33,7 @@
         <module>AOP-Advice-Type</module>
         <module>Case-Interface-Run-Speed</module>
         <module>AOP-Advice-Data</module>
+        <module>Case-Handle-Password</module>
     </modules>
 
 
