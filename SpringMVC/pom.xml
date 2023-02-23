@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>SpringMVC-QuickStart</module>
+        <module>Bean-Load</module>
     </modules>
 
     <properties>
