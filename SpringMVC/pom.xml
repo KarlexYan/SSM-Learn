@@ -15,6 +15,7 @@
         <module>SpringMVC-QuickStart</module>
         <module>Bean-Load</module>
         <module>Request-Mapping</module>
+        <module>Request-Param</module>
     </modules>
 
     <properties>
