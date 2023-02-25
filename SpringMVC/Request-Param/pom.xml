@@ -23,7 +23,6 @@
     </properties>
 
     <dependencies>
-        <!--1.导入坐标SpringMVC与Servlet-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -34,6 +33,12 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>5.2.10.RELEASE</version>
+        </dependency>
+        <!--导入json坐标-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.0</version>
         </dependency>
     </dependencies>
 
