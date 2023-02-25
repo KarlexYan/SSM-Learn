@@ -17,6 +17,7 @@
         <module>Request-Mapping</module>
         <module>Request-Param</module>
         <module>Response</module>
+        <module>REST</module>
     </modules>
 
     <properties>
