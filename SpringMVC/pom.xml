@@ -19,6 +19,7 @@
         <module>Response</module>
         <module>REST</module>
         <module>REST-Case</module>
+        <module>SSM</module>
     </modules>
 
     <properties>
