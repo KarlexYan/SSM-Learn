@@ -21,6 +21,7 @@
         <module>REST-Case</module>
         <module>SSM</module>
         <module>Result</module>
+        <module>Exception</module>
     </modules>
 
     <properties>
