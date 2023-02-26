@@ -14,7 +14,7 @@ public class JdbcConfig {
     private String url;
     @Value("${mysql.username}")
     private String userName;
-    @Value("${mysql.password")
+    @Value("${mysql.password}")
     private String password;
 
     @Bean
