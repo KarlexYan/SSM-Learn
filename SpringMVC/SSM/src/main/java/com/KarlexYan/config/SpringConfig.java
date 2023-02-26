@@ -10,5 +10,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan({"com.KarlexYan.service"})
 @PropertySource("classpath:jdbc.properties")
 @Import({JdbcConfig.class,MyBatisConfig.class})
+@EnableTransactionManagement
 public class SpringConfig {
 }
