@@ -20,6 +20,7 @@
         <module>REST</module>
         <module>REST-Case</module>
         <module>SSM</module>
+        <module>Result</module>
     </modules>
 
     <properties>
