@@ -22,6 +22,7 @@
         <module>SSM</module>
         <module>Result</module>
         <module>Exception</module>
+        <module>Page</module>
     </modules>
 
     <properties>
