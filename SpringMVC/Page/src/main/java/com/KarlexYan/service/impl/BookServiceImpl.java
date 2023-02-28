@@ -22,20 +22,17 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public boolean save(Book book) {
-        bookDao.save(book);
-        return true;
+        return bookDao.save(book) > 0;
     }
 
     @Override
     public boolean delete(Integer id) {
-        bookDao.delete(id);
-        return true;
+        return bookDao.delete(id) > 0;
     }
 
     @Override
     public boolean update(Book book) {
-        bookDao.update(book);
-        return true;
+        return bookDao.update(book) > 0;
     }
 
     @Override
@@ -46,8 +43,8 @@ public class BookServiceImpl implements BookService {
     @Override
     public Book getById(Integer id) {
         // 模拟业务异常，包装成自定义异常
-        if(id == 1){
-            throw new BusinessException("非法操作",Code.BUSINESS_ERR);
+        if (id == 1) {
+            throw new BusinessException("非法操作", Code.BUSINESS_ERR);
         }
         // 模拟系统异常，将可能出现的异常进行包装，转换成自定义异常
 //        try{
