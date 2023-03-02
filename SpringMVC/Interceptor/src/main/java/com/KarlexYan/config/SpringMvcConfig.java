@@ -1,0 +1,38 @@
+package com.KarlexYan.config;
+
+import com.KarlexYan.controller.interceptor.ProjectInterceptor;
+import com.KarlexYan.controller.interceptor.ProjectInterceptor2;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+@Configuration
+//@ComponentScan({"com.KarlexYan.controller","com.KarlexYan.config"})
+@ComponentScan("com.KarlexYan.controller")
+@EnableWebMvc
+// 实现WebMvcConfigurer接口可以简化开发，但具有一定的侵入性
+public class SpringMvcConfig implements WebMvcConfigurer {
+    private ProjectInterceptor interceptor;
+
+    @Autowired
+    public void setInterceptor(ProjectInterceptor interceptor) {
+        this.interceptor = interceptor;
+    }
+
+    private ProjectInterceptor2 interceptor2;
+
+    @Autowired
+    public void setInterceptor2(ProjectInterceptor2 interceptor2) {
+        this.interceptor2 = interceptor2;
+    }
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        // 配置多拦截器
+        registry.addInterceptor(interceptor).addPathPatterns("/books","/books/*");
+        registry.addInterceptor(interceptor2).addPathPatterns("/books","/books/*");
+    }
+}

@@ -23,6 +23,7 @@
         <module>Result</module>
         <module>Exception</module>
         <module>Page</module>
+        <module>Interceptor</module>
     </modules>
 
     <properties>
