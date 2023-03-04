@@ -11,6 +11,7 @@
     <modules>
         <module>Spring</module>
         <module>SpringMVC</module>
+        <module>SpringBoot</module>
 
     </modules>
 
