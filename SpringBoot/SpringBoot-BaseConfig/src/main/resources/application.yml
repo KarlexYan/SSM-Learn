@@ -1,0 +1,12 @@
+#server:
+#  port: 81
+
+logging:
+  level:
+    root: warn
+
+hobby:
+  - sing
+  - dance
+  - rap
+  - basket
