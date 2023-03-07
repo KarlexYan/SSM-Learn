@@ -1,0 +1,8 @@
+# 这是本地数据库，可以在properties中配一个网络数据库，因为默认不上传以免泄露隐私
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/learndatabase?useSSL=false
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
