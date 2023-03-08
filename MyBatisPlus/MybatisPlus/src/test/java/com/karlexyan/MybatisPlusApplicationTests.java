@@ -19,4 +19,42 @@ class MybatisPlusApplicationTests {
             System.out.println(user);
         }
     }
+
+    @Test
+    public void testGetById(){
+        User user = userDao.selectById(1);
+        System.out.println(user);
+    }
+
+    @Test
+    public void testSave(){
+        User user  = new User();
+        user.setName("zhangsan");
+        user.setPassword("123456");
+        user.setAge(23);
+        user.setTel("china");
+        int insert = userDao.insert(user);
+        if(insert>0){
+            System.out.println("创建成功");
+        }
+    }
+
+    @Test
+    public void testDeleteById(){
+        int i = userDao.deleteById(1633372735890104322L);
+        if(i>0){
+            System.out.println("删除成功");
+        }
+    }
+
+    @Test
+    public void testUpdateById(){
+        User user  = new User();
+        user.setId(1L);
+        user.setName("Tommy");
+        int i = userDao.updateById(user);
+        if(i>0){
+            System.out.println("修改成功");
+        }
+    }
 }
