@@ -12,6 +12,7 @@
         <module>Spring</module>
         <module>SpringMVC</module>
         <module>SpringBoot</module>
+        <module>MyBatisPlus</module>
 
     </modules>
 
