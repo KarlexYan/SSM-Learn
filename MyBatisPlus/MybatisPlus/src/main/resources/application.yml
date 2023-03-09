@@ -8,3 +8,8 @@ spring:
     url: jdbc:mysql://localhost/learndatabase?useSSL=false
     username: root
     password: 123456
+
+# 开启mybatis-plus日志功能（输出到控制台）
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

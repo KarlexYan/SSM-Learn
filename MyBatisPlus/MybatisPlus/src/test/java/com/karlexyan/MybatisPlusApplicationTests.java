@@ -1,5 +1,7 @@
 package com.karlexyan;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.karlexyan.dao.UserDao;
 import com.karlexyan.domain.User;
 import org.junit.jupiter.api.Test;
@@ -56,5 +58,17 @@ class MybatisPlusApplicationTests {
         if(i>0){
             System.out.println("修改成功");
         }
+    }
+
+    @Test
+    void testGetByPage(){
+        // 设置当前页1，每页2个
+        IPage page = new Page(2,2);
+        userDao.selectPage(page,null);
+        System.out.println("当前页码值："+page.getCurrent());
+        System.out.println("每页显示数："+page.getSize());
+        System.out.println("一共多少页："+page.getPages());
+        System.out.println("一共多少条数据："+page.getTotal());
+        System.out.println("数据："+page.getRecords());
     }
 }
