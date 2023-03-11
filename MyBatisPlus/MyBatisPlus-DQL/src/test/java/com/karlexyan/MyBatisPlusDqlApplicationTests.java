@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
+import java.util.Map;
 import java.util.function.Consumer;
 
 @SpringBootTest
@@ -89,6 +90,23 @@ class MyBatisPlusDqlApplicationTests {
                 .gt(null != userQuery.getAge(), User::getAge, userQuery.getAge());
         List<User> userList = userDao.selectList(wrapper);
         userList.forEach(user -> System.out.println(user));
+    }
+
+    // 查询投影
+    @Test
+    void testProjection(){
+        // 查询结果包含模型类中部分属性
+//        LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<>();
+//        wrapper.select(User::getName,User::getPassword);
+//        List<User> userList = userDao.selectList(wrapper);
+//        userList.forEach(user -> System.out.println(user));
+
+        // 查询结果包含模型类中未定义的属性
+        QueryWrapper<User> wrapper = new QueryWrapper<>();
+        wrapper.select("count(*) as nums,tel");
+        wrapper.groupBy("tel");
+        List<Map<String, Object>> maps = userDao.selectMaps(wrapper);
+        System.out.println(maps);
     }
 
 }
