@@ -1,0 +1,17 @@
+# 本地数据库，看着改
+server:
+  port: 80
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost/learndatabase?useSSL=false
+    username: root
+    password: 123456
+  main:
+    banner-mode: off
+
+# 关闭mybatis-plus的日志
+mybatis-plus:
+  global-config:
+    banner: false
