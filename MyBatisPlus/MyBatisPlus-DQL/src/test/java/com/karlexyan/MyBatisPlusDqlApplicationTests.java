@@ -109,4 +109,25 @@ class MyBatisPlusDqlApplicationTests {
         System.out.println(maps);
     }
 
+    // 查询条件设置
+    @Test
+    void testSelectByUserQuery(){
+//        LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<>();
+//        // 等同于 =
+//        wrapper.eq(User::getName,"Jerry").eq(User::getPassword,"jerry");
+//        User user = userDao.selectOne(wrapper);
+//        System.out.println(user);
+
+//        LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<>();
+//        // 范围查询 lt le gt ge eq between
+//        wrapper.between(User::getAge,10,30);
+//        List<User> users = userDao.selectList(wrapper);
+//        users.forEach(user -> System.out.println(user));
+
+        LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<>();
+        // 模糊匹配 like
+        wrapper.like(User::getName,"J");
+        List<User> userList = userDao.selectList(wrapper);
+        userList.forEach(user -> System.out.println(user));
+    }
 }
