@@ -28,7 +28,7 @@ class MyBatisPlusDmlApplicationTests {
 
     @Test
     void testDelete() {
-        userDao.deleteById(1634412037491101697L);
+        userDao.deleteById(1634424372523847681L);
         //删除指定多条数据
 //        List<Long> list = new ArrayList<>();
 //        list.add(1402551342481838081L);
